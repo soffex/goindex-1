@@ -11,12 +11,16 @@ Combining the power of [Cloudflare Workers](https://workers.cloudflare.com/) and
 # Versions
 
 
+## 1. [Aicirou/goindex-theme-acrou](https://github.com/Aicirou/goindex-theme-acrou)
 
-## [Aicirou/goindex-theme](https://github.com/Aicirou/goindex-theme-acrou)
 
-Dark Mode : [index.js](https://github.com/alx-xlx/goindex/blob/production/goindex-acrou/go2index/index.js)
+Worker Script (Dark Mode) : [index.js](https://github.com/alx-xlx/goindex/blob/2.0.5-darkmode-0.1/goindex-acrou/go2index/index.js)
 
-Copy the [index.js](https://github.com/alx-xlx/goindex/blob/production/goindex-acrou/go2index/index.js) script to [workers.dev](https://workers.dev) and edit `client_id`, `client_secret`, `refresh_token` with yours
+Worker Script (Multiple Google Accounts) : [index-multiple-accounts.js](https://github.com/alx-xlx/goindex/blob/master/goindex-acrou/go2index/index-multiple-accounts.js)
+
+Demo - [goindex.teamsdrives.workers.dev](https://goindex.teamsdrives.workers.dev)
+
+Copy the [index.js](https://github.com/alx-xlx/goindex/blob/2.0.5-darkmode-0.1/goindex-acrou/go2index/index.js) script to [workers.dev](https://workers.cloudflare.com/) and edit `client_id`, `client_secret`, `refresh_token` with yours
 
 OR
 
@@ -25,27 +29,37 @@ https://goindex.glitch.me/
 
 Simply visit [this](https://goindex.glitch.me/) Modified (only for Dark Mode) version to automatically generate your `index.js` without having to manually edit anything.
 
-### List View - Dark Mode
-![](https://i.imgur.com/Y9pJo1V.png)
+### [List View - Dark Mode](https://goindex.teamsdrives.workers.dev)
+![goindex-list](https://i.imgur.com/Y9pJo1V.png)
 
-### Thumbnail View - Dark Mode
-![](https://i.imgur.com/crg4dGp.gif)
+### [Thumbnail View - Dark Mode](https://goindex.teamsdrives.workers.dev)
+![goindex-thumbnail](https://i.imgur.com/crg4dGp.gif)
+
+### Toggle View
+![goindex-toggle-view](https://i.imgur.com/RdvgfIf.png)
 
 
 ---
+## 2. [maple3142/GDIndex](https://github.com/maple3142/GDIndex)
+---
+Worker Script - [index.js](https://github.com/alx-xlx/goindex/blob/2.0.5-darkmode-0.1/goindex-vue.js)
 
-## donwa/goindex
+Demo - [gdindex-dark.teamsdrives.workers.dev](https://gdindex-dark.teamsdrives.workers.dev)
 
-index.js
+## 3. donwa/goindex
+
+Workers Script - [index.js](https://github.com/alx-xlx/goindex/blob/2.0.5-darkmode-0.1/goindex.js)
 
 ## Themes
-### material: [https://index.gd.workers.dev/](https://index.gd.workers.dev/)
+
+### Demo Classic : [goindex-classic.teamsdrives.workers.dev](https://goindex-classic.teamsdrives.workers.dev)
+
+![](https://i.imgur.com/lNeh3S3.png)
+
+### Demo Material: [goindex-material.teamsdrives.workers.dev](https://goindex-material.teamsdrives.workers.dev)
 
 ![](https://i.imgur.com/jAq7Lsm.png)
 
-### classic: [https://indexc.gd.workers.dev/](https://indexc.gd.workers.dev/)
-
-![](https://i.imgur.com/lNeh3S3.png)
 
 ## Deployment  
 1.Install `rclone` software locally  
@@ -64,7 +78,7 @@ index.js
 Use this when you want to host everything
 
 ## Get Google ClientID and SecretID
-Log into the Google API Console [https://console.developers.google.com/] with your Google account. It doesn’t matter what Google account you use. (It need not be the same account as the Google Drive you want to access)
+Log into the Google API Console [https://console.developers.google.com/] with your Google account. It doesn’t matter which Google account you use. (It need not be the same account as the Google Drive you want to access)
 
 Select a project or create a new project.
 
@@ -166,3 +180,11 @@ https://www.base64-image.de/
 
 ## About  
 Cloudflare Workers allow you to write JavaScript which runs on all of Cloudflare's 150+ global data centers.  
+
+## Credits - Original Authors
+
+goindex-theme-acrou - [Aicirou](https://github.com/Aicirou/goindex-theme-acrou)
+
+GDIndex - [maple3142](https://github.com/maple3142/GDIndex)
+
+goindex - [donwa](https://github.com/donwa/goindex)
